@@ -8,6 +8,8 @@ Write a function that makes an API call to `https://dog.ceo/api/breeds/image/ran
 - After receiving the data, append to the `<ul>` a `<li>` that contains an `<img>` element with the dog image
 - Incorporate error handling */
 
+// fetch api data function
+
 function fetchDogImage() {
   fetch("https://dog.ceo/api/breeds/image/random")
     .then(function (response) {
@@ -22,14 +24,14 @@ function fetchDogImage() {
       li.appendChild(img);
       ul.appendChild(li);
     })
-    .then(function () {
+    .catch(function () {
       console.error("There was an error when loading the page");
     });
 }
+
+// add event listener
 
 let button1 = document.getElementById("button1");
 button1.addEventListener("click", () => {
   fetchDogImage();
 });
-
-let button2 = document.getElementById("button2");
