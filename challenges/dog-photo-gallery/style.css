@@ -1,0 +1,19 @@
+#container {
+  display: grid;
+  grid-template-columns: 50%;
+}
+img {
+  height: 300px;
+  width: 400px;
+}
+#button1 {
+  height: 40px;
+  width: 100px;
+  background-color: rgb(155, 155, 228);
+  color: black;
+  font-size: large;
+  border-radius: 5px;
+}
+ul {
+  list-style: none;
+}
